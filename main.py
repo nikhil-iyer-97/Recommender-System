@@ -91,7 +91,8 @@ def main():
 		cf=recommender.CollaborativeFilteringBaseline(matrix)
 		k=cf.predict()
 		'''
-		cf=recommender.CURRecommenderSystem(matrix,96)
+		cf=recommender.CollaborativeFilteringBaseline(matrix)
+		#cf=recommender.CURRecommenderSystem(matrix,96)
 		cf.predict()
 
 if __name__ == '__main__':

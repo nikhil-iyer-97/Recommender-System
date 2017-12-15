@@ -244,7 +244,10 @@ class CollaborativeFilteringBaseline():
 			for j in cols:
 				if m1[i][j]!=0:
 					#m1[i][j]=self.predictRating(i,j)
-					diff=diff+((self.predictRating(i,j)-m1[i][j])**2)
+					if abs(self.predictRating(i,j)-m1[i][j]) < 10**-10:
+						pass
+					else:
+						diff=diff+((self.predictRating(i,j)-m1[i][j])**2)
 					n=n+1
 		
 		rmse=math.sqrt(diff/n)
