@@ -5,5 +5,5 @@ The above project is a recommender system for movies given the ratings of variou
 Usage:
 ------
 
-Run main.py to generate results with various optimizations for SVD and CUR.
+Run main.py to generate results with various optimizations for Collaborative Filtering, SVD and CUR.
 
